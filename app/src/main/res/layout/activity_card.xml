@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/cardone"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/card_back_black"
+            app:layout_constraintBottom_toTopOf="@+id/cardfour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875"
+            tools:layout_conversion_absoluteHeight="300dp"
+            tools:layout_conversion_absoluteWidth="80dp" />
+
+        <ImageView
+            android:id="@+id/cardtwo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginRight="72dp"
+            android:src="@drawable/card_back_blue"
+            app:layout_constraintBottom_toTopOf="@+id/cardfive"
+            app:layout_constraintEnd_toStartOf="@+id/cardthree"
+            app:layout_constraintStart_toEndOf="@+id/cardone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_conversion_absoluteHeight="300dp"
+            tools:layout_conversion_absoluteWidth="80dp" />
+
+        <ImageView
+            android:id="@+id/cardthree"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/card_back_red"
+            app:layout_constraintBottom_toTopOf="@+id/cardsix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="300dp"
+            tools:layout_conversion_absoluteWidth="80dp" />
+
+        <ImageView
+            android:id="@+id/cardfour"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/card_back_purple"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardone"
+            tools:layout_conversion_absoluteHeight="300dp"
+            tools:layout_conversion_absoluteWidth="80dp" />
+
+        <ImageView
+            android:id="@+id/cardfive"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginRight="72dp"
+            android:src="@drawable/card_back_green"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/cardsix"
+            app:layout_constraintStart_toEndOf="@+id/cardfour"
+            app:layout_constraintTop_toBottomOf="@+id/cardtwo"
+            tools:layout_conversion_absoluteHeight="300dp"
+            tools:layout_conversion_absoluteWidth="80dp" />
+
+        <ImageView
+            android:id="@+id/cardsix"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/card_back_orange"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardthree"
+            tools:layout_conversion_absoluteHeight="300dp"
+            tools:layout_conversion_absoluteWidth="80dp" />
+
+
+        <Button
+            android:id="@+id/shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="Shuffle Cards"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="131dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

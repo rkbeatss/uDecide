@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">uDecideFinal</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_coin">coinActivity</string>
+    <string name="title_activity_card">cardActivity</string>
+    <string name="title_activity_card_input">cardInputActivity</string>
+    <string name="title_activity_help_page">helpPage</string>
+    <string name="coin_help">1. Pick your coin type  \n2. Input your values for Heads and Tails. \n3. Click next and flip the coin to get your decision.</string>
+    <string name="card_help">1.Click on the add button to add your choices. \n2. You need a minimum of three choices and a maximum of six choices. \n3. Click next and pick a card for your decision</string>
+</resources>
